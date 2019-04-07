@@ -33,6 +33,28 @@ Finally, Angular 7 and RXJS Observables are used for the PopOver. All external i
 
 ### Build
 
+First, you need to install NodeJS on your machine. If you are on mac, this can easily be done using `nvm`.
+See installation instructions for nvm here: https://github.com/creationix/nvm#installation-and-update
+
+Once you have nvm installed, after cloning this project, you can execute the following commands:
+
+`nvm install 10.15.1`
+
+`nvm use 10.15.1`
+
+Next, install `yarn` and the Angular CLI:
+
+`npm install -g yarn`
+
+`npm install -g @angular/cli`
+
+Next, execute yarn on the root directory of this repo:
+
+`yarn`
+
+Finally, run `ng build --prod` to build the extension.
+
+More details:
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. Since the popover loads each time the Chrome Extension icon is clicked, it is recommended to use `--prod` to mitigate delayed popup responses. This build command will also transpile and copy both the PopOver and "extension" dependencies.
 
 Once the application has been built you can re-install it in a similar fashion to the Installation steps above:
